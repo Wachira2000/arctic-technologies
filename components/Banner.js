@@ -7,11 +7,11 @@ const Banner = () => {
       <section className='banner'>
         <div className='container'>
           <div>
-            <Title title='We are looking forward to start a new project' /> <br />
-            <TitleLogo title='Lets take your business to the next level!' />
+            <Title title='We are excited to be at your service' /> <br />
+            <TitleLogo title='Let us take your business to the next level!' />
           </div>
           <div>
-            <button className='button-primary'>Request a call-back</button>
+            <button className='button-primary'>Talk to Us</button>
           </div>
         </div>
       </section>

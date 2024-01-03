@@ -12,12 +12,12 @@ const Hero = () => {
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
+          <TitleLogo title='Technologies' caption='Arctic' className='logobg' />
+          <h1 className='hero-title'>LET'S BUILD YOUR SOFTWARE NEEDS</h1>
 
           <div className='sub-heading'>
             <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
+            <TitleSm title='APP DEVELOPMENT' /> <span>.</span>
             <TitleSm title='DIGITAL MARKETING' />
           </div>
         </div>
@@ -25,8 +25,8 @@ const Hero = () => {
       <section className='hero-sec'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='The last digital agency you ll ever need' />
-            <p>Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut magna porttitor scelerisque.</p>
+            <Title title='The best digital agency at your service' />
+            <p>Welcome to Arctic technologies, where innovation meets excellence in website and app development, alongside cutting-edge digital marketing solutions. As trailblazers in the industry, we take pride in delivering unparalleled services that transcend expectations and redefine success.</p>
           </div>
           <div className='hero-content grid-4'>
             {home.map((item, i) => (
@@ -46,7 +46,7 @@ const Hero = () => {
       <Brand />
 
       <div className='text-center'>
-        <Title title='Latest news & articles' />
+        <Title title='News & articles' />
       </div>
       <BlogCard />
     </>
