@@ -5,7 +5,7 @@ const Blogs = () => {
   return (
     <>
       <Head>
-        <title>Blog - Arctic Technologies</title>
+        {/* <title>Blog - Arctic Technologies</title> */}
       </Head>
       <Blog />
     </>
