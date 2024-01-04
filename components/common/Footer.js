@@ -13,13 +13,15 @@ const Footer = () => {
               <TitleLogo title='Technologies' caption='Arctic' className='logobg' />
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Questions? Contact Us <br /> Monday – Friday from 9 am to 6 pm
               </span>
               <br />
               <br />
               <h3>+1 001 234 5678</h3>
               <br />
-              <button className='button-primary'>Request for quote</button>
+              <a href="/contact"> 
+            <button className='button-primary'>Speak to the Team</button>
+            </a>
             </div>
             <ul>
               <h3>COMPANY</h3>
@@ -45,7 +47,7 @@ const Footer = () => {
             <ul>
               <h3>SERVICES</h3>
               <li>
-                <Link href='/'>Web Design & Development</Link>
+                <Link href='/'>Web Development</Link>
               </li>
               <li>
                 <Link href='/'>Branding & Creative Services</Link>
@@ -54,7 +56,7 @@ const Footer = () => {
                 <Link href='/'>Digital Marketing</Link>
               </li>
               <li>
-                <Link href='/'>E-Commerce</Link>
+                <Link href='/'>App Development</Link>
               </li>
             </ul>
             <ul>
@@ -85,10 +87,10 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+              <span>© 2024 ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
-              <span>GORKCODER COMPANY</span>
+              <span>ARCTIC TECHNOLOGIES</span>
               <span> &nbsp; | &nbsp; </span>
               <span>TERMS & CONDITIONS</span>
             </div>

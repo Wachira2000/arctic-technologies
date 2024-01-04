@@ -5,8 +5,25 @@ import { BiUserCircle } from "react-icons/bi"
 import { BsFacebook } from "react-icons/bs"
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi"
 import { IoLocationOutline } from "react-icons/io5"
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_lgmyv3q', 'template_f8lhyf7', form.current, 'c6ncqTB3LGyCZxSlY')
+      .then((result) => {
+          alert("Email sent successfully");
+      }, (error) => {
+          alert(error.message);
+      });
+      e.target.reset();
+  };
+
   return (
     <>
       <section className='contact bg-top'>
@@ -37,7 +54,7 @@ const Contact = () => {
                 <div className='box'>
                   <BiUserCircle size={30} className='icons' />
                   <h3>hr@dream-theme.com</h3>
-                  <span>Career at Seven Creative</span>
+                  <span>Careers at Arctic Technologies</span>
                 </div>
               </div>
               <ul>
@@ -59,30 +76,45 @@ const Contact = () => {
               <TitleSm title='Make an online enquiry' />
               <p className='desc-p'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
 
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className='grid-2'>
                   <div className='inputs'>
                     <span>Name</span>
-                    <input type='text' />
+                    <input name="name"
+                    type="text"
+                    id="name"
+                    required placeholder="Your name"/>
                   </div>
                   <div className='inputs'>
                     <span>Email</span>
-                    <input type='text' />
+                    <input name="email"
+                    type="email"
+                    id="email"
+                    required placeholder="Your email"/>
                   </div>
                 </div>
                 <div className='grid-2'>
                   <div className='inputs'>
-                    <span>your budget</span>
-                    <input type='text' />
-                  </div>
-                  <div className='inputs'>
-                    <span>timeframe</span>
-                    <input type='text' />
+                    <span>Phone Number</span>
+                    <input name="phone"
+                    type="phone"
+                    id="phone"
+                    required placeholder="Enter your phone number"/>
                   </div>
                 </div>
                 <div className='inputs'>
-                  <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
-                  <textarea cols='30' rows='10'></textarea>
+                <label
+                htmlFor="message"
+                className="text-white block text-sm mb-2 font-medium"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Type your message here..."
+              />
                 </div>
                 <button className='button-primary'>Submit</button>
               </form>

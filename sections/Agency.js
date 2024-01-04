@@ -16,11 +16,12 @@ const Agency = () => {
 
           <div className='content flex1'>
             <div className='left w-60 py'>
-              <TitleSm title='Turning your business ideas into smart digital products since 2001' />
-              <p className='desc-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus eleifend magna, molestie iaculis sem pulvinar eu. Etiam non dui felis. Proin posuere dapibus magna laoreet posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, sem eget sollicitudin tempor, libero velit aliquam enim, vel egestas tortor ante quis sem.</p>
+              <TitleSm title='Where Creativity Meets Cutting-Edge Technology' />
+              <p className='desc-p'>
+              Every pixel we place, every line of code we write, and every strategy we craft is a testament to our relentless pursuit of perfection. Our team of seasoned developers, designers, and digital marketing strategists are driven by one mission: to elevate your digital presence beyond the ordinary.</p>
               <div className='grid-3'>
                 <div className='box'>
-                  <h1 className='indigo'>10+</h1>
+                  <h1 className='indigo'>5+</h1>
                   <h3>Years of experience</h3>
                 </div>
                 <div className='box'>
@@ -45,7 +46,11 @@ const Agency = () => {
             <div className='right w-60 ml'>
               <TitleSm title='Our mission' />
               <br />
-              <p className='misson-p'>Fusce fringilla justo vel dui consectetur, fringilla maximus ante malesuada. Suspendisse facilisis nisl augue, ut sollicitudin lectus ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse vitae officia nostrum facere. Fugiat voluptates, expedita dolore at perferendis quae libero fuga consequatur veniam, eius non fugit nulla vitae?</p>
+              <p className='misson-p'>
+              We are on a mission to redefine industry standards, setting new benchmarks for excellence in website development, app creation, and digital marketing. Our commitment is to consistently raise the bar, challenging ourselves to innovate and deliver solutions that surpass expectations.
+
+              At Arctic Technologies, our mission is not just a statement; it's a guiding force that propels us forward. Join us in this journey of igniting brilliance, empowering futures, and redefining digital landscapes. Together, let's shape a future where every digital interaction is a masterpiece, and every business achieves its full potential.
+              </p>
             </div>
           </div>
         </div>

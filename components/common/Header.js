@@ -44,7 +44,9 @@ const Header = () => {
             <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
               Contact
             </Link>
-            <button className='button-primary'>Talk to Us</button>
+            <a href="/contact"> 
+           <button className='button-primary'>Speak to the Team</button>
+           </a>
           </nav>
           <button onClick={() => setOpen(!open)} className="menucontrol">{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>

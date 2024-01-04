@@ -11,7 +11,9 @@ const Banner = () => {
             <TitleLogo title='Let us take your business to the next level!' />
           </div>
           <div>
-            <button className='button-primary'>Talk to Us</button>
+            <a href="/contact"> 
+            <button className='button-primary'>Speak to the Team</button>
+            </a>
           </div>
         </div>
       </section>
