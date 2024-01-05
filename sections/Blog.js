@@ -1,4 +1,4 @@
-import { blogs } from "@/pages/blogs"
+import { blog } from "@/assets/data/dummydata"
 import BlogCard from "@/components/BlogCard"
 import { Card } from "@/components/common/Card"
 import { Title, TitleSm } from "@/components/common/Title"
