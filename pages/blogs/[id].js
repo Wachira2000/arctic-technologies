@@ -6,9 +6,9 @@ import { useRouter } from "next/router"
 import React from "react"
 
 const SinglePost = () => {
-  const router = useRouter()
-  const { id } = router.query
-  const post = blogdata.find((post) => post.id === parseInt(id))
+  const router = useRouter();
+  const { id } = router.query;
+  const post = blogdata.find((post) => post.id === parseInt(id));
 
   // Handle case where post is not found
   if (!post) {
@@ -19,7 +19,7 @@ const SinglePost = () => {
   return (
     <>
       <Head>
-        <title>{post.title}</title>
+        <title>{post.title || 'Untitled'}</title>
       </Head>
       <section className='post-details bg-top'>
         <div className='container'>
