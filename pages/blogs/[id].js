@@ -10,6 +10,12 @@ const SinglePost = () => {
   const { id } = router.query
   const post = blogdata.find((post) => post.id === parseInt(id))
 
+  // Handle case where post is not found
+  if (!post) {
+    // You can redirect to a 404 page or show an error message
+    return <div>Error: Post not found</div>;
+  }
+
   return (
     <>
       <Head>
