@@ -1,10 +1,9 @@
 import { home } from "@/assets/data/dummydata"
 import Banner from "@/components/Banner"
 import Expertise from "@/components/Expertise"
-import ShowCase from "@/components/ShowCase"
 import Testimonial from "@/components/Testimonial"
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
-import { BlogCard, Brand } from "@/components/router"
+import {Brand } from "@/components/router"
 import React from "react"
 
 const Hero = () => {
@@ -16,7 +15,7 @@ const Hero = () => {
           <h1 className='hero-title'>LET'S BUILD YOUR SOFTWARE NEEDS</h1>
 
           <div className='sub-heading'>
-            <TitleSm title='WEBSITES' /> <span>.</span>
+            <TitleSm title='WEBSITE DEVELOPMENT' /> <span>.</span>
             <TitleSm title='APP DEVELOPMENT' /> <span>.</span>
             <TitleSm title='DIGITAL MARKETING' />
           </div>
@@ -42,13 +41,12 @@ const Hero = () => {
       <Expertise />
       <Banner />
       <Testimonial />
-      <ShowCase />
       <Brand />
 
       <div className='text-center'>
         <Title title='News & articles' />
       </div>
-      <BlogCard />
+
     </>
   )
 }

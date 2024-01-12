@@ -374,3 +374,108 @@ footer {
     }
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .hero {
+  .hero-title {
+    font-size: $xl-5;}}
+
+  .banner {
+    .container {
+      @include flex(center, none, column);
+      button {
+        margin-top: 50px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .blog-card {
+    .card {
+      @include flex(none, none, column);
+      .card-img {
+        width: 100%;
+        height: 300px;
+      }
+      .card-details {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  .w-30,
+  .w-40,
+  .w-50,
+  .w-60,
+  .w-70 {
+    width: 100%;
+    margin: 0;
+  }
+  .agency {
+    .flex,
+    .flex1 {
+      flex-direction: column;
+    }
+    .grid-3 {
+      @include grid(repeat(3, 1fr), 50px);
+    }
+  }
+  .contact {
+    .content {
+      .left {
+        text-align: center;
+        margin-bottom: 50px;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li {
+            margin: 0 20px;
+          }
+        }
+      }
+      flex-direction: column;
+    }
+  }
+  .testimonial {
+    .cards {
+      margin-top: $lg;
+      p {
+        margin-bottom: $lg;
+        font-size: $lg;
+        line-height: $xl;
+      }
+      .image {
+        margin-top: $lg;
+        margin-bottom: $lg;
+        .img {
+          width: $xll;
+          height: $xll;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .img-text {
+          margin-left: $xl;
+          h3 {
+            font-size: $xl;
+            margin-bottom: $s;
+          }
+          span {
+            font-size: $sm;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .connect{
+    font-size: $lg;
+    ;
+  }
+
+  }}

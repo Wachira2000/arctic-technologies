@@ -156,3 +156,42 @@
     padding: 50px 0;
   }
 }
+
+@media screen and (max-width: 320px) {
+  // Adjust styles for devices between 800px and 1420px
+  // ...
+
+
+  .slick-arrow .prev {
+    left: 0.2%;
+  }
+
+  .slick-arrow .next {
+    bottom: 0%;
+    right: 0.2%;
+  }
+
+  .heading-title {
+    max-width: 70%;
+    padding-top: $xl-2;
+    padding-bottom: $xl-3;
+  }
+  .title-logo {
+    font-size: $xl;
+    span {
+      font-size: 30px;
+    }
+  }
+  .titleSm {
+    font-size: $xl-2;
+    letter-spacing: 2px;
+  }
+  .title {
+    font-size: $xl;
+  
+  }
+  .caption{
+    font-size: $xl;
+  }
+  // Add more adjustments as needed
+}
